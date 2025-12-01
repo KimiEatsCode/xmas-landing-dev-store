@@ -1,0 +1,162 @@
+{% doc %}
+  @prompt
+    image from library that has z-index and is position absolute with a negative left margin, also add a negative right position and a top and a bottom position option, add option to rotate image, I need the image to be on the right of the product banner
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-positioned-image-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+  }
+
+  .ai-positioned-image__wrapper-{{ ai_gen_id }} {
+    position: absolute;
+    z-index: {{ block.settings.z_index }};
+    top: {{ block.settings.top_position }}px;
+    bottom: {{ block.settings.bottom_position }}px;
+    right: {{ block.settings.right_position }}px;
+    margin-left: {{ block.settings.left_margin }}px;
+    transform: rotate({{ block.settings.rotation }}deg);
+  }
+
+  .ai-positioned-image__img-{{ ai_gen_id }} {
+    width: {{ block.settings.image_width }}px;
+    height: auto;
+    display: block;
+  }
+
+  .ai-positioned-image__placeholder-{{ ai_gen_id }} {
+    width: {{ block.settings.image_width }}px;
+    height: {{ block.settings.image_width }}px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-positioned-image__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+{% endstyle %}
+
+<div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-positioned-image__wrapper-{{ ai_gen_id }}">
+    {% if block.settings.image %}
+      <img
+        src="{{ block.settings.image | image_url: width: 1000 }}"
+        alt="{{ block.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.image.width }}"
+        height="{{ block.settings.image.height }}"
+        class="ai-positioned-image__img-{{ ai_gen_id }}"
+      >
+    {% else %}
+      <div class="ai-positioned-image__placeholder-{{ ai_gen_id }}">
+        {{ 'image' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Position abs right image",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 100,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Image width",
+      "default": 400
+    },
+    {
+      "type": "header",
+      "content": "Position"
+    },
+    {
+      "type": "range",
+      "id": "z_index",
+      "min": -10,
+      "max": 50,
+      "step": 1,
+      "label": "Z-index",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "top_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Top position",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom position",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "right_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Right position",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "left_margin",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Left margin",
+      "default": -50
+    },
+    {
+      "type": "header",
+      "content": "Transform"
+    },
+    {
+      "type": "range",
+      "id": "rotation",
+      "min": -180,
+      "max": 180,
+      "step": 5,
+      "unit": "deg",
+      "label": "Rotation",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Positioned image"
+    }
+  ]
+}
+{% endschema %}

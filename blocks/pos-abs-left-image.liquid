@@ -1,0 +1,195 @@
+{% doc %}
+  @prompt
+    image from library that has z-index and is position absolute with a negative left margin, also add a right position and bottom position option, add option to rotate image, add top option as well 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-positioned-image-{{ ai_gen_id }} {
+    position: absolute;
+    z-index: {{ block.settings.z_index }};
+    left: {{ block.settings.left_margin }}px;
+    {% if block.settings.top_position_enabled %}
+      top: {{ block.settings.top_position }}px;
+    {% endif %}
+    {% if block.settings.right_position_enabled %}
+      right: {{ block.settings.right_position }}px;
+    {% endif %}
+    {% if block.settings.bottom_position_enabled %}
+      bottom: {{ block.settings.bottom_position }}px;
+    {% endif %}
+    transform: rotate({{ block.settings.rotation }}deg);
+    max-width: {{ block.settings.max_width }}px;
+    width: 100%;
+  }
+
+  .ai-positioned-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-positioned-image-placeholder-{{ ai_gen_id }} {
+    background-color: #f4f4f4;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-positioned-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .ai-positioned-image-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+{% endstyle %}
+
+<div
+  class="ai-positioned-image-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.image %}
+    <img
+      src="{{ block.settings.image | image_url: width: 2000 }}"
+      alt="{{ block.settings.image.alt | escape }}"
+      loading="lazy"
+      width="{{ block.settings.image.width }}"
+      height="{{ block.settings.image.height }}"
+    >
+  {% else %}
+    <div class="ai-positioned-image-placeholder-{{ ai_gen_id }}">
+      {{ 'image' | placeholder_svg_tag }}
+      <div class="ai-positioned-image-empty-state-{{ ai_gen_id }}">
+        Next, add an image
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Positioned abs left image",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 50,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 300
+    },
+    {
+      "type": "header",
+      "content": "Position"
+    },
+    {
+      "type": "range",
+      "id": "z_index",
+      "min": -10,
+      "max": 100,
+      "step": 2,
+      "label": "Z-index",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "left_margin",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Left position",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "top_position_enabled",
+      "label": "Enable top position",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "top_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Top position",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "right_position_enabled",
+      "label": "Enable right position",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "right_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Right position",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_position_enabled",
+      "label": "Enable bottom position",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "bottom_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom position",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "rotation",
+      "min": -180,
+      "max": 180,
+      "step": 5,
+      "unit": "deg",
+      "label": "Rotation",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Positioned image"
+    }
+  ]
+}
+{% endschema %}
