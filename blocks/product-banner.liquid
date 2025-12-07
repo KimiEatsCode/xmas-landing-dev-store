@@ -156,10 +156,11 @@
     div[class^=ai-product-banner-{{ ai_gen_id }}] {
       flex-direction: column;
       text-align:center!important;
-      {% comment %} gap: {{ block.settings.column_gap | times: 0.75 }}px; {% endcomment %}
+  
       gap:0px!important;
       height:auto;
       padding: {{ block.settings.section_padding | times: 0.75 }}px;
+      width:100vw;
     }
 
     .ai-product-banner__image-{{ ai_gen_id }},
@@ -175,6 +176,7 @@
 
     .ai-product-banner__description-{{ ai_gen_id }} {
       font-size: {{ block.settings.description_size | times: 0.9 }}px;
+      padding:0 9%;
     }
 
     .ai-product-banner__button-{{ ai_gen_id }} {
@@ -183,7 +185,7 @@
 
     .footer-content {
       margin:none;
-      
+
     }
 
       .email-signup__input.paragraph {
