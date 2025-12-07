@@ -417,7 +417,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "View Full Collection",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections/holiday-pop-up",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
