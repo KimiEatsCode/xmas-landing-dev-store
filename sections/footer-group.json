@@ -106,7 +106,7 @@
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Join the KimiCo email list</h2>",
+                "text": "<h2><strong>Join the KimiCo email list</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -135,9 +135,9 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
