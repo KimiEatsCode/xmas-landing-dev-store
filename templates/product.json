@@ -412,6 +412,21 @@
     "section_wQ7JJy": {
       "type": "section",
       "blocks": {
+        "button_dqFLcg": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "View Full Collection",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "group_LV3bbc": {
           "type": "group",
           "settings": {
@@ -809,6 +824,7 @@
         }
       },
       "block_order": [
+        "button_dqFLcg",
         "group_LV3bbc",
         "group_C4TfrG",
         "group_YnxMTJ"
