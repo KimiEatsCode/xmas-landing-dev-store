@@ -106,7 +106,7 @@
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Join the KimiCo email list</h2>",
+                "text": "<h2><strong>Join the KimiCo email list</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -135,9 +135,9 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -192,7 +192,7 @@
       "name": "t:names.footer",
       "settings": {
         "section_width": "page-width",
-        "gap": 20,
+        "gap": 0,
         "color_scheme": "scheme-1150fd98-f6e0-4867-91a9-36011713cbeb",
         "padding-block-start": 100,
         "padding-block-end": 100
