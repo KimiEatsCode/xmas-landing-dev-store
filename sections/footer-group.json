@@ -192,7 +192,7 @@
       "name": "t:names.footer",
       "settings": {
         "section_width": "page-width",
-        "gap": 20,
+        "gap": 0,
         "color_scheme": "scheme-1150fd98-f6e0-4867-91a9-36011713cbeb",
         "padding-block-start": 100,
         "padding-block-end": 100
