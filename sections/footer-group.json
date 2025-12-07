@@ -48,6 +48,7 @@
         "button_AftUFk",
         "spacer_Dw6xDB"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
