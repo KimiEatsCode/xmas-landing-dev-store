@@ -181,7 +181,7 @@
             "product": "xmas-holiday-fashion-tie",
             "button_text": "Shop now",
             "section_padding": 50,
-            "column_gap": 40,
+            "column_gap": 30,
             "content_gap": 20,
             "background_color": "#ffffff",
             "text_color": "#000000",
