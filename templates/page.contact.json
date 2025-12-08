@@ -83,7 +83,7 @@
         "contact_form_UwiCkQ": {
           "type": "contact-form",
           "settings": {
-            "width": "custom",
+            "width": "fit-content",
             "custom_width": 50,
             "width_mobile": "custom",
             "custom_width_mobile": 100,
