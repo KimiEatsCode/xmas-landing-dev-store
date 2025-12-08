@@ -211,8 +211,8 @@
         "section_width": "page-width",
         "gap": 0,
         "color_scheme": "scheme-1150fd98-f6e0-4867-91a9-36011713cbeb",
-        "padding-block-start": 100,
-        "padding-block-end": 100
+        "padding-block-start": 50,
+        "padding-block-end": 50
       }
     },
     "footer_utilities_jLGE8U": {
