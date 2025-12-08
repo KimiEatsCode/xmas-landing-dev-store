@@ -232,6 +232,9 @@
       endif
     %}
 
+      {% render 'cart-icon-component', limit: 100, live_region: true, test_id: test_id %}
+
+
     {% capture content %}
       {% render 'header-row',
         row: row,
