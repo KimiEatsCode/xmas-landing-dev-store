@@ -55,11 +55,11 @@
         {% if menu %}
           <ul class="list-unstyled">
             {% for link in menu.links %}
-              <li class="menu__item {{ block_settings.link_preset }}">
-                <a href="{{ link.url }}">
+               <a href="{{ link.url }}">  <li class="menu__item {{ block_settings.link_preset }}">
+             
                   {{ link.title }}
-                </a>
-              </li>
+             
+              </li>   </a>
             {% endfor %}
           </ul>
         {% endif %}
