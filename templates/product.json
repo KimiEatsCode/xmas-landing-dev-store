@@ -391,11 +391,11 @@
       ],
       "name": "t:names.product_recommendations",
       "settings": {
-        "product": "{{ closest.product }}",
+        "product": "christmas-holiday-fashion-tie-red",
         "recommendation_type": "related",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 5,
+        "max_products": 3,
         "columns": 3,
         "mobile_columns": "2",
         "columns_gap": 12,
