@@ -166,7 +166,7 @@
             "heading_preset": "h5",
             "link_preset": "h5",
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 35,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
