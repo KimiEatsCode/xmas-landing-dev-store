@@ -46,6 +46,7 @@
       "blocks": {
         "header-logo": {
           "type": "_header-logo",
+          "disabled": true,
           "static": true,
           "settings": {
             "hide_logo_on_home_page": true,
@@ -79,7 +80,6 @@
           "blocks": {}
         }
       },
-      "disabled": true,
       "settings": {
         "logo_position": "center",
         "menu_position": "center",
