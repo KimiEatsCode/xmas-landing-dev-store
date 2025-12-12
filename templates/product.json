@@ -264,7 +264,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Shipping Cost - $4.95</p><p>Dimensions - 4.25 W x 4.00 H</p>",
+                "text": "<p>Shipping Cost - $4.03</p><p>Dimensions - 4.25 W x 4.00 H</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
