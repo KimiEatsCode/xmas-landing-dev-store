@@ -193,7 +193,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h4>Order by December 15th to receive by Christmas</h4>",
+            "text": "<h4><strong>Order by December 15th to receive by Christmas</strong></h4>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
