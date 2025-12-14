@@ -219,7 +219,7 @@
           "type": "product-banner",
           "settings": {
             "product": "xmas-holiday-fashion-tie",
-            "button_text": "Shop now",
+            "button_text": "Shop Now",
             "section_padding": 35,
             "column_gap": 30,
             "content_gap": 20,
