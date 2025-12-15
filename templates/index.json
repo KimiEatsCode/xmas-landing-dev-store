@@ -50,7 +50,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2><strong>SPORT A LITTLE HOLIDAY SPIRIT WITH THE A LITTLE TWIST</strong></h2>",
+                "text": "<h2><strong>SPORT A LITTLE HOLIDAY SPIRIT WITH A TWIST</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
