@@ -50,7 +50,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2><strong>SPORT A LITTLE HOLIDAY SPIRIT WITH THE A LITTLE TWIST</strong></h2>",
+                "text": "<h2><strong>SPORT A LITTLE HOLIDAY SPIRIT WITH A TWIST</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -212,7 +212,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>KimiCo started when a web designer swapped code for craft, diving into fabric art and polymer clay over one inspired winter. Today, she’s sharing her handmade wares—simple, sweet, and made for makers, crafters, and anyone looking for a beautiful gift.</p>",
+            "text": "<p>KimiCo started when a web designer swapped code for craft, diving into fabric art and polymer clay over one inspired winter. Today, she’s sharing her handmade wares—simple, sweet, and made for makers, crafters, and anyone looking for a beautiful gift.</p><p>Sarah Kimi Rettig's Web and Graphic design portfolio is viewable at: <a href=\"https://sarahkimirettig.com\" target=\"_blank\" title=\"https://sarahkimirettig.com\">https://sarahkimirettig.com</a></p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -265,7 +265,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 25
+        "padding-block-end": 74
       }
     }
   },

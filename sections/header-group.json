@@ -31,7 +31,7 @@
           "type": "_header-menu",
           "static": true,
           "settings": {
-            "menu": "",
+            "menu": "main-menu",
             "color_scheme": "",
             "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse",
@@ -101,7 +101,7 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Special Seasonable Pop-up! December 2025 Only!",
+            "text": "Special Season Greetings Pop-up! December 2025 Only!",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "1.25rem",
@@ -189,12 +189,38 @@
     "blocks_iLawm4": {
       "type": "_blocks",
       "blocks": {
+        "text_iTnXK7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h4><strong>Order by December 15th to receive by Christmas</strong></h4>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 14,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "product_banner_EFzjqR": {
           "type": "product-banner",
           "settings": {
             "product": "xmas-holiday-fashion-tie",
-            "button_text": "Shop now",
-            "section_padding": 50,
+            "button_text": "Shop Now",
+            "section_padding": 35,
             "column_gap": 30,
             "content_gap": 20,
             "background_color": "#ffffff",
@@ -202,7 +228,7 @@
             "button_background": "#000000",
             "button_hover_background": "#333333",
             "button_text_color": "#ffffff",
-            "title_size": 48,
+            "title_size": 34,
             "description_size": 16,
             "button_text_size": 16,
             "image_border_radius": 8,
@@ -213,6 +239,7 @@
         }
       },
       "block_order": [
+        "text_iTnXK7",
         "product_banner_EFzjqR"
       ],
       "name": "Product banner",
