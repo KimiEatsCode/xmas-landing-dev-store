@@ -58,14 +58,18 @@
     pointer-events: none;
   }
 
-  @media (min-width:768px) and (max-width:1024px) {
+
+  @media (min-width:768px) {
      .ai-positioned-image-{{ ai_gen_id }} {
     top:-175px!important;
+      border: 1px solid red;
   }
 
-   @media (max-width:767px){
+  @media (min-width:481px){
      .ai-positioned-image-{{ ai_gen_id }} {
     top:7px!important;
+    bottom:100px;
+    border: 1px solid red;
   }
 
 
