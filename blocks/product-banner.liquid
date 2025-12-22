@@ -1,6 +1,6 @@
 {% doc %}
   @prompt
-    two column banner with product image on the left and text from the product on the right with a button on right as well under the text, banner is full-width at desktop and stacked column on mobile, hide price
+    two column banner with product image on the left and text from the product on the right with a button on right as well under the text, banner is full-widtrebah at desktop and stacked column on mobile, hide price
 {% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
@@ -196,6 +196,7 @@
 
 {% if template.name == 'index' %}
 <div class="ai-product-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+{% render 'image' url  %}
   <div class="ai-product-banner__image-{{ ai_gen_id }}">
     {% if block.settings.product and block.settings.product.featured_image %}
         <img
