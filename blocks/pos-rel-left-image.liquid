@@ -60,18 +60,21 @@
 
 
   @media (min-width:768px) {
-     .ai-positioned-image-{{ ai_gen_id }} {
+
+   .ai-positioned-image-{{ ai_gen_id }} {
     top:-175px!important;
-      border: 1px solid red;
   }
 
-  @media (min-width:481px){
-     .ai-positioned-image-{{ ai_gen_id }} {
-    top:7px!important;
-    bottom:100px;
-    border: 1px solid red;
+}
+
+  @media (max-width:767px){
+
+   .ai-positioned-image-{{ ai_gen_id }} {
+    top:-20px!important;
   }
 
+}
+ 
 
 {% endstyle %}
 
