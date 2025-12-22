@@ -172,6 +172,24 @@
     "blocks_iLawm4": {
       "type": "_blocks",
       "blocks": {
+        "pos_abs_left_image_9p68b4": {
+          "type": "pos-abs-left-image",
+          "name": "Positioned image",
+          "settings": {
+            "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
+            "max_width": 300,
+            "z_index": 0,
+            "left_margin": 0,
+            "top_position_enabled": false,
+            "top_position": 0,
+            "right_position_enabled": false,
+            "right_position": 0,
+            "bottom_position_enabled": false,
+            "bottom_position": 0,
+            "rotation": 0
+          },
+          "blocks": {}
+        },
         "text_iTnXK7": {
           "type": "text",
           "name": "t:names.text",
@@ -222,6 +240,7 @@
         }
       },
       "block_order": [
+        "pos_abs_left_image_9p68b4",
         "text_iTnXK7",
         "product_banner_EFzjqR"
       ],
