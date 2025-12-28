@@ -220,12 +220,11 @@
           },
           "blocks": {}
         },
-        "pos_abs_center_image_eTHrra": {
+        "pos_abs_center_image_HQbp7Y": {
           "type": "pos-abs-center-image",
-          "name": "Positioned image abs center",
+          "name": "pos image abs center",
           "settings": {
-            "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
-            "image_width": 210,
+            "image_width": 400,
             "z_index": 1,
             "top_position": 0,
             "bottom_position": 0,
@@ -238,7 +237,7 @@
       "block_order": [
         "text_iTnXK7",
         "product_banner_EFzjqR",
-        "pos_abs_center_image_eTHrra"
+        "pos_abs_center_image_HQbp7Y"
       ],
       "name": "Product banner",
       "settings": {
