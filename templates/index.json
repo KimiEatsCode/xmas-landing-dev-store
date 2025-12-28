@@ -18,10 +18,10 @@
             "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
             "image_width": 180,
             "z_index": 1,
-            "top_position": 200,
+            "top_position": -220,
             "bottom_position": 0,
             "right_position": 0,
-            "rotation": 75
+            "rotation": 5
           },
           "blocks": {}
         }
@@ -36,9 +36,9 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -115,7 +115,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 38,
+                "padding-block-end": 100,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
