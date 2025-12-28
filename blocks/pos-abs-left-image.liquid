@@ -13,9 +13,9 @@
  
     left: {{ block.settings.left_margin }}px;
     top: -63px;
-    {% if block.settings.top_position_enabled %}
+    {% comment %} {% if block.settings.top_position_enabled %}
       top: {{ block.settings.top_position }}px;
-    {% endif %}
+    {% endif %} {% endcomment %}
     {% if block.settings.right_position_enabled %}
       right: {{ block.settings.right_position }}px;
     {% endif %}
