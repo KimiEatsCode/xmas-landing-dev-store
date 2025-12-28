@@ -9,7 +9,7 @@
   position: absolute;
     display:flex;
     justify-content: center;
-    z-index: {{ block.settings.z_index }};
+    width:100%;
     top: {{ block.settings.top_position }}px;
     bottom: {{ block.settings.bottom_position }}px;
     right: {{ block.settings.right_position }}px;
@@ -18,15 +18,9 @@
   }
 
   .ai-positioned-image__wrapper-{{ ai_gen_id }} {
-    {% comment %} position: absolute;
     display:flex;
     justify-content: center;
     z-index: {{ block.settings.z_index }};
-    top: {{ block.settings.top_position }}px;
-    bottom: {{ block.settings.bottom_position }}px;
-    right: {{ block.settings.right_position }}px;
-    left: {{ block.settings.left }}px;
-    transform: rotate({{ block.settings.rotation }}deg); {% endcomment %}
   }
 
   .ai-positioned-image__img-{{ ai_gen_id }} {
