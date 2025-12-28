@@ -225,7 +225,7 @@
           "name": "Positioned image abs center",
           "settings": {
             "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
-            "image_width": 400,
+            "image_width": 210,
             "z_index": 1,
             "top_position": 0,
             "bottom_position": 0,
