@@ -42,6 +42,16 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+  @media screen and (max-width: 749px) {
+  .ai-positioned-image-{{ ai_gen_id }} {
+
+    top: -135px;
+  }
+
+
+  }
 {% endstyle %}
 
 <div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
