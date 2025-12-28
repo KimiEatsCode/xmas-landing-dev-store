@@ -12,8 +12,8 @@
     z-index: {{ block.settings.z_index }};
     top: {{ block.settings.top_position }}px;
     bottom: {{ block.settings.bottom_position }}px;
-    {% comment %} right: {{ block.settings.right_position }}px;
-    left: {{ block.settings.left_position }}px; {% endcomment %}
+    right: {{ block.settings.right_position }}px;
+    left: {{ block.settings.left }}px;
     transform: rotate({{ block.settings.rotation }}deg);
   }
 
@@ -72,7 +72,7 @@
 
 {% schema %}
 {
-  "name": "Position abs right image",
+  "name": "pos image abs center",
   "tag": null,
   "settings": [
     {
@@ -92,7 +92,7 @@
       "step": 10,
       "unit": "px",
       "label": "Image width",
-      "default": 200
+      "default": 400
     },
     {
       "type": "header",
@@ -115,7 +115,7 @@
       "step": 10,
       "unit": "px",
       "label": "Top position",
-      "default": -63,
+      "default": 0
     },
     {
       "type": "range",
@@ -135,7 +135,7 @@
       "step": 10,
       "unit": "px",
       "label": "Right position",
-      "default": 0,
+      "default": 0
     },
     {
       "type": "header",
@@ -154,7 +154,7 @@
   ],
   "presets": [
     {
-      "name": "Positioned image abs center"
+      "name": "pos image abs center"
     }
   ]
 }
