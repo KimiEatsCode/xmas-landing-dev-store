@@ -148,6 +148,7 @@
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "1.25rem",
+            "line_height_range": 2.1,
             "weight": "",
             "letter_spacing": "normal",
             "case": "none"
