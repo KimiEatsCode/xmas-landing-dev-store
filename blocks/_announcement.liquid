@@ -16,6 +16,7 @@
       custom-typography
       {% if block_settings.font_size != "" %}custom-font-size{% endif %}
       {% if block_settings.weight != "" %}custom-font-weight{% endif %}
+      {% if block_settings.line_height != "" %}custom-line-height{% endif %}
     "
     style="
       {% render 'typography-style', settings: block_settings, preset: 'custom' %}
