@@ -208,7 +208,7 @@
             "background_color": "#ffffff",
             "text_color": "#000000",
             "button_background": "#000000",
-            "button_hover_background": "#333333",
+            "button_hover_background": "#3d3d3d",
             "button_text_color": "#ffffff",
             "title_size": 34,
             "description_size": 16,

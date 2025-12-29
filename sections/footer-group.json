@@ -204,7 +204,7 @@
         "menu_93ierD",
         "divider_YiCPnh"
       ],
-      "name": "t:names.custom_section",
+      "name": "footer menu",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,

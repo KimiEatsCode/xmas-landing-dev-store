@@ -114,8 +114,8 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 100,
+                "padding-block-start": 37,
+                "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -228,6 +228,68 @@
         "padding-block-end": 48
       }
     },
+    "blocks_bREDia": {
+      "type": "_blocks",
+      "blocks": {
+        "divider_HDwJYJ": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 4,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
+        "pos_abs_center_image_3gNYVe": {
+          "type": "pos-abs-center-image",
+          "settings": {
+            "image": "shopify://shop_images/pine-fir-xmas-transparent_c9ea446b-3d7e-4c9f-a4b8-a5188c5dcb94.png",
+            "image_width": 200,
+            "z_index": 1,
+            "top_position": 0,
+            "bottom_position": 0,
+            "right_position": 0,
+            "rotation": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "divider_HDwJYJ",
+        "pos_abs_center_image_3gNYVe"
+      ],
+      "name": "pos image abs center",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "section_rYAbMr": {
       "type": "section",
       "blocks": {
@@ -288,7 +350,7 @@
         "text_dWE8rn",
         "text_QYNTKA"
       ],
-      "name": "t:names.custom_section",
+      "name": "About KimiCo section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -321,6 +383,7 @@
   "order": [
     "blocks_RrVra3",
     "product_list_fa6P9H",
+    "blocks_bREDia",
     "section_rYAbMr"
   ]
 }
