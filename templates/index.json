@@ -12,6 +12,38 @@
     "blocks_RrVra3": {
       "type": "_blocks",
       "blocks": {
+        "pos_abs_left_image_GfnTnN": {
+          "type": "pos-abs-left-image",
+          "name": "Positioned image abs left ",
+          "settings": {
+            "image": "shopify://shop_images/evergreen-twig-right.png",
+            "max_width": 370,
+            "z_index": 0,
+            "left_margin": -120,
+            "top_position_enabled": true,
+            "right_position_enabled": false,
+            "right_position": 0,
+            "bottom_position_enabled": false,
+            "bottom_position": 10,
+            "rotation": -20
+          },
+          "blocks": {}
+        },
+        "position_abs_right_image_pecRUa": {
+          "type": "position-abs-right-image",
+          "name": "Positioned image abs right",
+          "settings": {
+            "image": "shopify://shop_images/pine_cone_left_facing_mistletoe_white_BG_lo-res.png",
+            "image_width": 280,
+            "z_index": 1,
+            "top_position": -210,
+            "bottom_position": 0,
+            "right_position": -130,
+            "left_margin": -50,
+            "rotation": 0
+          },
+          "blocks": {}
+        },
         "pos_abs_center_image_dw3zkD": {
           "type": "pos-abs-center-image",
           "settings": {
@@ -27,6 +59,8 @@
         }
       },
       "block_order": [
+        "pos_abs_left_image_GfnTnN",
+        "position_abs_right_image_pecRUa",
         "pos_abs_center_image_dw3zkD"
       ],
       "name": "pos image abs center",
@@ -246,7 +280,6 @@
         "pos_abs_center_image_3gNYVe": {
           "type": "pos-abs-center-image",
           "settings": {
-            "image": "shopify://shop_images/pine-fir-xmas-transparent_c9ea446b-3d7e-4c9f-a4b8-a5188c5dcb94.png",
             "image_width": 200,
             "z_index": 1,
             "top_position": 0,
