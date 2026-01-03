@@ -620,7 +620,7 @@
                 "text_WRMLD4": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everything I do starts with fun</p>",
+                    "text": "<p>Everything I do has a little fun required</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -770,7 +770,7 @@
                 "text_TKxMCt": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>I believe in making for sake of making</p>",
+                    "text": "<p>I believe being a maker is the best thing to be</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
