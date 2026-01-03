@@ -40,6 +40,14 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width:768px) {
+
+  .ai-product-banner__image-{{ ai_gen_id }} {
+    margin-right:-350px;
+  }
+}
+
 {% endstyle %}
 
 <div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
