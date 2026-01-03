@@ -50,11 +50,6 @@
     max-height: 300px;
   }
 
-  .ai-product-banner__background-{{ ai_gen_id }} {
-    background-color:#a0d489;
-  }
-
-
   .ai-product-banner__content-{{ ai_gen_id }} {
     flex: 0 0 50%;
     max-width: 50%;
@@ -83,7 +78,7 @@
     padding: 14px 28px;
     background-color: {{ block.settings.button_background }};
     color: {{ block.settings.button_text_color }};
-    border-width: {{block.settings.button_border_width }}px;
+    border: {{block.settings.button_border_width }}px solid {{block.settings.button_border_color }}px;
     border-radius: {{ block.settings.button_border_radius }}px;
     font-size: {{ block.settings.button_text_size }}px;
     text-decoration: none;
@@ -192,7 +187,7 @@
 
 {% if template.name == 'index' %}
 <div class="ai-product-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
- <div class="ai-product-banner__background-{{ ai_gen_id }}">
+
   <div class="ai-product-banner__image-{{ ai_gen_id }}">
     {% if block.settings.product and block.settings.product.featured_image %}
         <img
@@ -237,7 +232,7 @@
     {% endif %}
   </div>
   </div>
-</div>
+
    {% endif %}
 {% schema %}
 {
