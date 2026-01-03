@@ -83,13 +83,11 @@
     padding: 14px 28px;
     background-color: {{ block.settings.button_background }};
     color: {{ block.settings.button_text_color }};
-    border-width: {{block.settings.button_border_width }};
+    border-width: {{block.settings.button_border_width }}px;
     border-radius: {{ block.settings.button_border_radius }}px;
     font-size: {{ block.settings.button_text_size }}px;
     text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
+    cursor: pointer;  
   }
 
   .ai-product-banner__button-{{ ai_gen_id }}:hover {
