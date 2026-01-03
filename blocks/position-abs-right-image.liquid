@@ -8,6 +8,7 @@
   .ai-positioned-image-{{ ai_gen_id }} {
     position: relative;
     width: 100%;
+    overflow-x:hidden;
   }
 
   .ai-positioned-image__wrapper-{{ ai_gen_id }} {
@@ -44,6 +45,7 @@
   @media screen and (max-width:768px) {
    .ai-positioned-image__img-{{ ai_gen_id }} {
     margin-right: -450px;
+    overflow-x:hidden;
   }
 
 {% endstyle %}
