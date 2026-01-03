@@ -85,10 +85,10 @@
     </div>
   {% endif %}
 </div>
-
 {% schema %}
 {
   "name": "Positioned abs left image",
+  "tag": null,
   "settings": [
     {
       "type": "header",
@@ -101,13 +101,13 @@
     },
     {
       "type": "range",
-      "id": "max_width",
-      "min": 50,
-      "max": 1000,
+      "id": "image_width",
+      "min": 100,
+      "max": 800,
       "step": 10,
       "unit": "px",
-      "label": "Maximum width",
-      "default": 300
+      "label": "Image width",
+      "default": 400
     },
     {
       "type": "header",
@@ -117,33 +117,30 @@
       "type": "range",
       "id": "z_index",
       "min": -10,
-      "max": 100,
-      "step": 2,
+      "max": 50,
+      "step": 1,
       "label": "Z-index",
-      "default": 0
+      "default": 1
     },
     {
       "type": "range",
-      "id": "left_margin",
+      "id": "top_position",
       "min": -500,
       "max": 500,
       "step": 10,
       "unit": "px",
-      "label": "Left position",
+      "label": "Top position",
       "default": 0
     },
     {
-      "type": "checkbox",
-      "id": "top_position_enabled",
-      "label": "Enable top position",
-      "default": false
-    },
-
-    {
-      "type": "checkbox",
-      "id": "right_position_enabled",
-      "label": "Enable right position",
-      "default": false
+      "type": "range",
+      "id": "bottom_position",
+      "min": -500,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom position",
+      "default": 0
     },
     {
       "type": "range",
@@ -156,20 +153,18 @@
       "default": 0
     },
     {
-      "type": "checkbox",
-      "id": "bottom_position_enabled",
-      "label": "Enable bottom position",
-      "default": false
-    },
-    {
       "type": "range",
-      "id": "bottom_position",
+      "id": "left_margin",
       "min": -500,
       "max": 500,
       "step": 10,
       "unit": "px",
-      "label": "Bottom position",
-      "default": 0
+      "label": "Left margin",
+      "default": -50
+    },
+    {
+      "type": "header",
+      "content": "Transform"
     },
     {
       "type": "range",
@@ -184,8 +179,9 @@
   ],
   "presets": [
     {
-      "name": "Positioned image abs left "
+      "name": "Positioned image abs left"
     }
   ]
 }
 {% endschema %}
+
