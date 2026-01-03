@@ -1,9 +1,8 @@
 {% doc %}
   @prompt
-    image from library that has z-index and is position absolute with a negative left margin, also add a right position and bottom position option, add option to rotate image, add top option as well 
+    image from library that has z-index and is position absolute with a negative right margin, also add a negative left position and a top and a bottom position option, add option to rotate image, I need the image to be on the left of the product banner
 {% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
-
 
 {% style %}
   .ai-positioned-image-{{ ai_gen_id }} {
@@ -43,7 +42,6 @@
   }
 {% endstyle %}
 
-
 <div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-positioned-image__wrapper-{{ ai_gen_id }}">
     {% if block.settings.image %}
@@ -63,11 +61,9 @@
   </div>
 </div>
 
-  {% endif %}
-</div>
 {% schema %}
 {
-  "name": "Positioned abs left image",
+  "name": "Positioned image abs left",
   "tag": null,
   "settings": [
     {
@@ -164,4 +160,3 @@
   ]
 }
 {% endschema %}
-
