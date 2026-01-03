@@ -556,7 +556,7 @@
             "text_i73GTK": {
               "type": "text",
               "settings": {
-                "text": "<h2>Intentional design</h2>",
+                "text": "<h2>Intentional Process</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -620,7 +620,7 @@
                 "text_WRMLD4": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everything I do has a little fun required</p>",
+                    "text": "<p>Fun is always part of the process</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
