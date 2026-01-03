@@ -83,7 +83,7 @@
     padding: 14px 28px;
     background-color: {{ block.settings.button_background }};
     color: {{ block.settings.button_text_color }};
-    border: {{block.settings.button_border }};
+    border-width: {{block.settings.button_border_width }};
     border-radius: {{ block.settings.button_border_radius }}px;
     font-size: {{ block.settings.button_text_size }}px;
     text-decoration: none;
@@ -323,14 +323,15 @@
       "default": "#333"
     },
 
-          {
-        "type": "range",
-        "id": "button_border_width",
-        "min": 0,
-        "max": 5,
+  {
+      "type": "range",
+      "id": "button_border_width",
+      "min": 0,
+      "max": 40,
+      "step": 2,
       "unit": "px",
       "label": "Button border width",
-      "default": 1
+      "default": 2
     },
     {
       "type": "color",
