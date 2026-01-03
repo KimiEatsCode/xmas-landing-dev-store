@@ -148,6 +148,7 @@
       gap:0px!important;
       height:auto;
       padding: {{ block.settings.section_padding | times: 0.75 }}px;
+      padding-bottom: {{ block.settings.section_bottom_padding | times: 0.75 }}px;
       width:100vw;
     }
 
@@ -176,7 +177,7 @@
 
     }
 
-      .email-signup__input.paragraph {
+   .email-signup__input.paragraph {
     margin-left:0px;
   }
   }
@@ -262,6 +263,16 @@
       "step": 5,
       "unit": "px",
       "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_bottom_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section bottom padding",
       "default": 40
     },
     {
