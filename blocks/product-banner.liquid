@@ -73,14 +73,13 @@
 
   .ai-product-banner__button-{{ ai_gen_id }} {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    width: {{ block.settings.button_width}};
     padding: 14px 28px;
     background-color: {{ block.settings.button_background }};
     color: {{ block.settings.button_text_color }};
     border-width: {{block.settings.button_border_width }}px;
-    border-style: {{block.settings.button_border_style}};
-    border-color: {{block.settings.button_border_color }}px;
+    border-style: solid;
+    border-color: {{block.settings.button_border_color }};
     border-radius: {{ block.settings.button_border_radius }}px;
     font-size: {{ block.settings.button_text_size }}px;
     text-decoration: none;
@@ -327,6 +326,16 @@
       "unit": "px",
       "label": "Button border width",
       "default": 2
+    },
+      {
+      "type": "range",
+      "id": "button_width",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "%",
+      "label": "Button width",
+      "default": 40
     },
   
     {
