@@ -13,7 +13,6 @@
     flex-direction:row;
     gap: {{ block.settings.column_gap }}px;
     width: 100%;
-    margin-top:8%;
   }
 
   .ai-product-banner__image-{{ ai_gen_id }} {
@@ -85,7 +84,7 @@
     padding: 14px 28px;
     background-color: {{ block.settings.button_background }};
     color: {{ block.settings.button_text_color }};
-    border: none;
+    border: {{block.settings.button_border }};
     border-radius: {{ block.settings.button_border_radius }}px;
     font-size: {{ block.settings.button_text_size }}px;
     text-decoration: none;
@@ -218,9 +217,9 @@
 
   <div class="ai-product-banner__content-{{ ai_gen_id }}">
     {% if block.settings.product %}
-      <h2 class="ai-product-banner__title-{{ ai_gen_id }}">
+      <div class="ai-product-banner__title-{{ ai_gen_id }}">
         {{ block.settings.product.title }}
-      </h2>
+      </div>
 
       {% if block.settings.product.description != blank %}
         <div class="ai-product-banner__description-{{ ai_gen_id }}">
@@ -322,6 +321,12 @@
       "type": "color",
       "id": "button_hover_background",
       "label": "Button hover background",
+      "default": "#333333"
+    },
+        {
+      "type": "color",
+      "id": "button_border",
+      "label": "Button border",
       "default": "#333333"
     },
     {
