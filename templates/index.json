@@ -17,14 +17,12 @@
           "name": "Positioned image abs left ",
           "settings": {
             "image": "shopify://shop_images/evergreen-twig-right.png",
-            "max_width": 370,
+            "image_width": 400,
             "z_index": 0,
-            "left_margin": -120,
-            "top_position_enabled": true,
-            "right_position_enabled": false,
-            "right_position": 0,
-            "bottom_position_enabled": false,
+            "top_position": 0,
             "bottom_position": 10,
+            "right_position": 0,
+            "left_margin": -120,
             "rotation": -20
           },
           "blocks": {}
@@ -280,7 +278,8 @@
         "pos_abs_center_image_3gNYVe": {
           "type": "pos-abs-center-image",
           "settings": {
-            "image_width": 200,
+            "image": "shopify://shop_images/pine_cones_two_together_on_green_fern_white_BG_hi-res.png",
+            "image_width": 330,
             "z_index": 1,
             "top_position": 0,
             "bottom_position": 0,
