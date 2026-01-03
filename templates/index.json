@@ -48,7 +48,7 @@
             "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
             "image_width": 160,
             "z_index": 1,
-            "top_position": -120,
+            "top_position": -90,
             "bottom_position": 0,
             "right_position": -110,
             "rotation": 5
