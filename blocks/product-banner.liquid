@@ -52,14 +52,17 @@
     max-height: 300px;
   }
 
+  .ai-product-banner__background-{{ ai_gen_id }} {
+    background-color:#a0d489;
+  }
+
+
   .ai-product-banner__content-{{ ai_gen_id }} {
     flex: 0 0 50%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: {{ block.settings.content_gap }}px;
-    background-color: {{ block.settings.background_color }};
-    background-color:#a0d489;
   }
 
   .ai-product-banner__title-{{ ai_gen_id }} {
@@ -193,7 +196,7 @@
 
 {% if template.name == 'index' %}
 <div class="ai-product-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
-
+ <div class="ai-product-banner__background-{{ ai_gen_id }}">
   <div class="ai-product-banner__image-{{ ai_gen_id }}">
     {% if block.settings.product and block.settings.product.featured_image %}
         <img
@@ -236,6 +239,7 @@
         Next, select a product to display
       </div>
     {% endif %}
+  </div>
   </div>
 </div>
    {% endif %}
