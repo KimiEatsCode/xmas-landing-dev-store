@@ -37,7 +37,7 @@
             "top_position": -50,
             "bottom_position": 0,
             "right_position": -20,
-            "left_margin": -50,
+            "right_margin": 0,
             "rotation": -125
           },
           "blocks": {}
@@ -50,7 +50,7 @@
             "z_index": 1,
             "top_position": -90,
             "bottom_position": 0,
-            "right_position": -110,
+            "right_position": 0,
             "rotation": 5
           },
           "blocks": {}
