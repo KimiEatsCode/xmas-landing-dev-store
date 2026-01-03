@@ -17,9 +17,9 @@
           "name": "Positioned image abs left ",
           "settings": {
             "image": "shopify://shop_images/evergreen-twig-right.png",
-            "image_width": 400,
-            "z_index": 0,
-            "top_position": 0,
+            "image_width": 340,
+            "z_index": -1,
+            "top_position": -220,
             "bottom_position": 10,
             "right_position": 0,
             "left_margin": -120,
@@ -31,14 +31,14 @@
           "type": "position-abs-right-image",
           "name": "Positioned image abs right",
           "settings": {
-            "image": "shopify://shop_images/pine_cone_left_facing_mistletoe_white_BG_lo-res.png",
-            "image_width": 350,
+            "image": "shopify://shop_images/green_fern_busy_facing_right_noBG_lo-res.png",
+            "image_width": 280,
             "z_index": 1,
-            "top_position": -210,
+            "top_position": -50,
             "bottom_position": 0,
-            "right_position": -150,
+            "right_position": -20,
             "left_margin": -50,
-            "rotation": 0
+            "rotation": -125
           },
           "blocks": {}
         },
