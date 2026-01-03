@@ -41,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: {{ block.settings.image_border_radius }}px;
   }
 
   .ai-product-banner__image-placeholder-{{ ai_gen_id }} svg {
@@ -217,9 +216,9 @@
 
   <div class="ai-product-banner__content-{{ ai_gen_id }}">
     {% if block.settings.product %}
-      <div class="ai-product-banner__title-{{ ai_gen_id }}">
+      <h2 class="ai-product-banner__title-{{ ai_gen_id }}">
         {{ block.settings.product.title }}
-      </div>
+      </h2>
 
       {% if block.settings.product.description != blank %}
         <div class="ai-product-banner__description-{{ ai_gen_id }}">
@@ -321,12 +320,22 @@
       "type": "color",
       "id": "button_hover_background",
       "label": "Button hover background",
-      "default": "#333333"
+      "default": "#333"
     },
-        {
+
+          {
+        "type": "range",
+        "id": "button_border_width",
+        "min": 0,
+        "max": 5,
+      "unit": "px",
+      "label": "Button border width",
+      "default": 1
+    },
+    {
       "type": "color",
-      "id": "button_border",
-      "label": "Button border",
+      "id": "button_border_color",
+      "label": "Button border color",
       "default": "#333333"
     },
     {
