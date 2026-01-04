@@ -133,7 +133,7 @@
               "settings": {
                 "text": "<h2><strong>SPORT A LITTLE HOLIDAY SPIRIT WITH A TWIST</strong></h2>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "narrow",
                 "alignment": "center",
                 "type_preset": "h3",
                 "font": "var(--font-body--family)",
