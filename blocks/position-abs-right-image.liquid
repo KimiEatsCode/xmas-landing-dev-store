@@ -43,9 +43,14 @@
   }
 
   @media screen and (max-width:768px) {
-   .ai-positioned-image__img-{{ ai_gen_id }} {
-    margin-right: -450px;
-    overflow-x:hidden;
+
+    .ai-positioned-image__img-{{ ai_gen_id }} {
+        display:none;
+    }
+  }
+
+    @media screen and (min-width:769px) and (max-width:1024px) {
+     
   }
 
 {% endstyle %}
