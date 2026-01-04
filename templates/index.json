@@ -19,7 +19,7 @@
             "image": "shopify://shop_images/evergreen-twig-right.png",
             "image_width": 340,
             "z_index": -1,
-            "top_position": -220,
+            "top_position": -60,
             "bottom_position": 10,
             "right_position": 0,
             "left_margin": -120,
