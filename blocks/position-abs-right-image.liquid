@@ -17,7 +17,7 @@
     top: {{ block.settings.top_position }}px;
     bottom: {{ block.settings.bottom_position }}px;
     right: {{ block.settings.right_position }}px;
-    margin-right: {{ block.settings.right_margin }}px;
+    {% comment %} margin-right: {{ block.settings.right_margin }}px; {% endcomment %}
     transform: rotate({{ block.settings.rotation }}deg);
   }
 
