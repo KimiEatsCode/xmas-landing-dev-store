@@ -8,7 +8,7 @@
   .ai-positioned-image-{{ ai_gen_id }} {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
+    right:-80px;
   }
 
   .ai-positioned-image__wrapper-{{ ai_gen_id }} {
@@ -16,8 +16,9 @@
     z-index: {{ block.settings.z_index }};
     top: {{ block.settings.top_position }}px;
     bottom: {{ block.settings.bottom_position }}px;
-    right: {{ block.settings.right_position }}px;
-    {% comment %} margin-right: {{ block.settings.right_margin }}px; {% endcomment %}
+    right: 0;
+    overflow:hidden;
+    height:288px;
     transform: rotate({{ block.settings.rotation }}deg);
   }
 
