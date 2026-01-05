@@ -56,7 +56,7 @@
   <div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
     {% if block.settings.image %}
       <img
-        src="{{ block.settings.image | image_url: width: 1000 }}"
+        src="{{ block.settings.image | image_url: width: 400 }}"
         alt="{{ block.settings.image.alt | escape }}"
         loading="lazy"
         width="{{ block.settings.image.width }}"
