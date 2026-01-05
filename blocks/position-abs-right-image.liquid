@@ -8,12 +8,11 @@
   .ai-positioned-image-{{ ai_gen_id }} {
     position: relative;
     width: 100%;
-    {% comment %} overflow-x:hidden; {% endcomment %}
+    overflow-x: hidden;
   }
 
   .ai-positioned-image__wrapper-{{ ai_gen_id }} {
     position: absolute;
-    overflow-x: hidden;
     z-index: {{ block.settings.z_index }};
     top: {{ block.settings.top_position }}px;
     bottom: {{ block.settings.bottom_position }}px;
