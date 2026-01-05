@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "blocks_RrVra3": {
+    "1767635187db64bdb4": {
       "type": "_blocks",
       "blocks": {
-        "pos_abs_left_image_GfnTnN": {
+        "pos_abs_left_image_xFmtE8": {
           "type": "pos-abs-left-image",
           "name": "Positioned image abs left ",
           "settings": {
@@ -27,7 +27,7 @@
           },
           "blocks": {}
         },
-        "position_abs_right_image_pecRUa": {
+        "position_abs_right_image_iDUQBx": {
           "type": "position-abs-right-image",
           "name": "Positioned image abs right",
           "settings": {
@@ -42,7 +42,7 @@
           },
           "blocks": {}
         },
-        "pos_abs_center_image_dw3zkD": {
+        "pos_abs_center_image_DaWTqC": {
           "type": "pos-abs-center-image",
           "settings": {
             "image": "shopify://shop_images/Christmas_banner_mistletoe_design_element_1.png",
@@ -57,20 +57,19 @@
         }
       },
       "block_order": [
-        "pos_abs_left_image_GfnTnN",
-        "position_abs_right_image_pecRUa",
-        "pos_abs_center_image_dw3zkD"
+        "pos_abs_left_image_xFmtE8",
+        "position_abs_right_image_iDUQBx",
+        "pos_abs_center_image_DaWTqC"
       ],
-      "name": "pos image abs center",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 12,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -285,7 +284,7 @@
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
@@ -400,7 +399,7 @@
     }
   },
   "order": [
-    "blocks_RrVra3",
+    "1767635187db64bdb4",
     "product_list_fa6P9H",
     "blocks_bREDia",
     "section_rYAbMr"
