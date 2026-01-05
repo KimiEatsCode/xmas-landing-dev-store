@@ -58,8 +58,8 @@
 
 {% endstyle %}
 
-<div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-positioned-image__wrapper-{{ ai_gen_id }}">
+  <div class="ai-positioned-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
     {% if block.settings.image %}
       <img
         src="{{ block.settings.image | image_url: width: 1000 }}"
