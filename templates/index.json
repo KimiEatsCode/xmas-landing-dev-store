@@ -37,7 +37,6 @@
             "top_position": -140,
             "bottom_position": 0,
             "right_position": -40,
-            "right_margin": -90,
             "rotation": 0
           },
           "blocks": {}
@@ -51,7 +50,7 @@
             "top_position": -90,
             "bottom_position": 0,
             "right_position": 0,
-            "rotation": 5
+            "rotation": 20
           },
           "blocks": {}
         }
@@ -311,6 +310,18 @@
     "section_rYAbMr": {
       "type": "section",
       "blocks": {
+        "divider_AcWBdA": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
         "text_dWE8rn": {
           "type": "text",
           "name": "t:names.heading",
@@ -365,6 +376,7 @@
         }
       },
       "block_order": [
+        "divider_AcWBdA",
         "text_dWE8rn",
         "text_QYNTKA"
       ],
